@@ -45,7 +45,7 @@
     "release": "npm run build && auto shipit",
     "start": "run-p build:watch \"storybook --quiet\"",
     "storybook": "storybook dev -p 6006",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest run"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
@@ -74,6 +74,7 @@
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.44.1",
     "vite": "^7.0.5",
+    "vitest": "^5.0.0",
     "zx": "^8.7.1"
   },
   "peerDependencies": {
@@ -98,7 +99,15 @@
   "storybook": {
     "displayName": "pagemap",
     "supportedFrameworks": [
-      "react", "vue", "angular", "web-components", "ember", "html", "svelte", "preact", "react-native"
+      "react",
+      "vue",
+      "angular",
+      "web-components",
+      "ember",
+      "html",
+      "svelte",
+      "preact",
+      "react-native"
     ],
     "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
   },
